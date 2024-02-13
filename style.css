@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden; /* To prevent video overflow */
+    margin-top: 10px;
+}
+
+#video-background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: black; /* Adjust text color for visibility */
+    margin-top: 100px; /* Increase the margin-top to add more space */
+    margin-bottom: 50px; /* Add margin-bottom for extra space */
+}
+
+form {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin-top for the form */
+    background-color: rgba(255, 255, 255, 0.3); /* Glass-like effect */
+    backdrop-filter: blur(12px); /* Glass-like blur effect */
+    width: 500px;
+    padding: 40px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: calc(100% - 20px); /* Adjusted width with padding */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.button-group {
+    margin-bottom: 20px;
+}
+
+.button-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.button-group a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    width: calc(100% - 20px); /* Adjusted width with padding */
+    padding: 10px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+a:hover{
+    text-decoration: underline;
+}
